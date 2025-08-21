@@ -95,7 +95,7 @@ Design goals:
 ---
 
 ## Environment Variables
-```
+```env
 # Provider: OpenAI (default)
 OPENAI_API_KEY=...
 OPENAI_MODEL=gpt-4o-mini
