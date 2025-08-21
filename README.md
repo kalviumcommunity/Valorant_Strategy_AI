@@ -40,7 +40,7 @@ A web application that takes match context (map, agents, team economy, and round
 ---
 
 ## Motivation
-Players often need quick, situation‑appropriate plans. Existing tools mostly provide static lineups or whiteboards. This app generates **dynamic strategies** driven by the current context a player supplies.
+Players often need quick, situation-appropriate plans. Existing tools mostly provide static lineups or whiteboards. This app generates **dynamic strategies** driven by the current context a player supplies.
 
 ## What the App Does (Objective, not hype)
 - Accepts structured match context (map, side, agents, round type/economy, optional notes) via a web UI.
