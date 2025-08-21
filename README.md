@@ -184,7 +184,7 @@ Run the evaluation suite over the 5+ sample scenarios; returns per‑case judgme
 ## Prompt Engineering (with templates)
 > The app exposes modes: **zero‑shot, one‑shot, multi‑shot, dynamic, chain‑of‑thought (CoT)**.
 
-**System Prompt (RTFC)**
+**System Prompt**
 ```
 You are a professional Valorant coach. Generate realistic, safe, and concise strategies. Output valid JSON matching the schema, followed by a short readable summary. Do not invent non‑existent agent abilities. Stop at: ### END STRATEGY ###
 ```
