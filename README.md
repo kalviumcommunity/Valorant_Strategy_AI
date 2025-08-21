@@ -51,14 +51,12 @@ Players often need quick, situation-appropriate plans. Existing tools mostly pro
 ---
 
 ## Architecture
-```
-Frontend (React/Tailwind)
-  → Backend API (Node/Express)
-     → LLM Provider (default: OpenAI GPT‑4o mini; pluggable: Mistral/Llama via HF)
-     → Embeddings (OpenAI or Sentence‑Transformers)
-     → Vector Index (FAISS or Pinecone/Weaviate alternative)
-     → Eval Runner (Node script + judge prompt)
-```
+graph TD
+    Frontend["Frontend (React/Tailwind)"] --> Backend["Backend API (Node/Express)"];
+    Backend --> LLM["LLM Provider<br>(default: OpenAI GPT-4o mini; pluggable: Mistral/Llama via HF)"];
+    Backend --> Embeddings["Embeddings<br>(OpenAI or Sentence-Transformers)"];
+    Backend --> VectorIndex["Vector Index<br>(FAISS or Pinecone/Weaviate alternative)"];
+    Backend --> EvalRunner["Eval Runner<br>(Node script + judge prompt)"];
 Design goals:
 - Keep the LLM provider **pluggable** (OpenAI by default; open‑source optional).
 - Standardize on a **strict JSON schema** for strategies to make UI/visualization predictable.
