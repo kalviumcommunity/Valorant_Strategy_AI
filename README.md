@@ -30,7 +30,7 @@ A web application that takes match context (map, agents, team economy, and round
 - [Prompt Engineering (with templates)](#prompt-engineering-with-templates)
 - [Evaluation Dataset & Testing Framework](#evaluation-dataset--testing-framework)
 - [Tokenization & Cost Controls](#tokenization--cost-controls)
-- [Decoding Parameters (Temperature, Top‑p, Top‑k, Stop)](#decoding-parameters-temperature-topp-topk-stop)
+- [Decoding Parameters (Temperature, Top‑p, Top‑k, Stop)](#decoding-parameters-temperature-top-p-top-k-stop)
 - [Embeddings, Vector Index & Similarity](#embeddings-vector-index--similarity)
 - [Security & Privacy](#security--privacy)
 - [Roadmap](#roadmap)
