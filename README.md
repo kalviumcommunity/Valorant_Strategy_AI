@@ -168,7 +168,7 @@ Generate a strategy from structured inputs.
   ```
 - **Response** (200)
   ```json
-  { "strategy": { /* JSON per schema */ }, "text": "...", "tokens": {"input": 523, "output": 187} }
+  { "strategy": { /* see schema above */ }, "text": "...", "tokens": {"input": 523, "output": 187} }
   ```
 
 ### `POST /api/search`
