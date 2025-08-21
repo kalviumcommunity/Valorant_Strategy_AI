@@ -160,7 +160,7 @@ Generate a strategy from structured inputs.
   {
     "map": "Ascent",
     "side": "attack",
-    "agents": ["Jett","Omen","Sova","Killjoy","Sage"],
+    "agents": ["Jett", "Omen", "Sova", "Killjoy", "Sage"],
     "round_type": "full_buy",
     "economy": "balanced",
     "prompting_mode": "zero|one|multi|dynamic|cot",
