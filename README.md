@@ -163,7 +163,7 @@ Generate a strategy from structured inputs.
     "agents": ["Jett", "Omen", "Sova", "Killjoy", "Sage"],
     "round_type": "full_buy",
     "economy": "balanced",
-    "prompting_mode": "zero|one|multi|dynamic|cot",
+    "prompting_mode": "zero",
     "decoding": { "temperature": 0.7, "top_p": 0.9, "top_k": 40 },
     "use_retrieval": true
   }
