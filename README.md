@@ -136,8 +136,8 @@ pnpm dev
 ```json
 {
   "map": "Ascent",
-  "side": "attack",            
-  "round_type": "full_buy",    
+  "side": "attack",
+  "round_type": "full_buy",
   "agents": ["Jett", "Omen", "Sova", "Killjoy", "Sage"],
   "plan": {
     "setup": ["Killjoy holds A lobby for flank", "Sage watches B main"],
