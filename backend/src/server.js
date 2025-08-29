@@ -3,6 +3,7 @@ import cors from "cors";
 import rateLimit from "express-rate-limit";
 import dotenv from "dotenv";
 import strategyRoutes from "./routes/strategy.js";
+import oneShotRoute from "./routes/oneShotStrategy.js";
 
 dotenv.config();
 
@@ -27,6 +28,7 @@ app.use(
 // Routes
 app.get("/health", (_, res) => res.json({ ok: true }));
 app.use("/api/strategy", strategyRoutes);
+app.use("/api/strategy/one-shot", oneShotRoute);
 
 // Start
 app.listen(PORT, () => {
