@@ -5,11 +5,12 @@ import dotenv from "dotenv";
 import strategyRoutes from "./routes/strategy.js";
 import oneShotRoute from "./routes/oneShotStrategy.js";
 import multiShotRoute from "./routes/multiShotStrategy.js";
+import dynamicRoute from "./routes/dynamicStrategy.js";
 
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors());
@@ -31,6 +32,7 @@ app.get("/health", (_, res) => res.json({ ok: true }));
 app.use("/api/strategy", strategyRoutes);
 app.use("/api/strategy/one-shot", oneShotRoute);
 app.use("/api/strategy/multi-shot", multiShotRoute);
+app.use("/api/strategy/dynamic", dynamicRoute);
 
 // Start
 app.listen(PORT, () => {
