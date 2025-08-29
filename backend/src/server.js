@@ -6,6 +6,7 @@ import strategyRoutes from "./routes/strategy.js";
 import oneShotRoute from "./routes/oneShotStrategy.js";
 import multiShotRoute from "./routes/multiShotStrategy.js";
 import dynamicRoute from "./routes/dynamicStrategy.js";
+import cotRoute from "./routes/chainOfThoughtStrategy.js";
 
 dotenv.config();
 
@@ -33,6 +34,7 @@ app.use("/api/strategy", strategyRoutes);
 app.use("/api/strategy/one-shot", oneShotRoute);
 app.use("/api/strategy/multi-shot", multiShotRoute);
 app.use("/api/strategy/dynamic", dynamicRoute);
+app.use("/api/strategy/cot", cotRoute);
 
 // Start
 app.listen(PORT, () => {
